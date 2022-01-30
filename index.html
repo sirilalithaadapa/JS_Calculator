@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/css">
+
+<style>
+body {
+	background-color: #7CF2B6;
+}
+</style>
+
+<script type = "text/javascript">
+function calculator(){
+
+var n1 = parseFloat(document.getElementById("n1").value)
+var n2 = parseFloat(document.getElementById("n2").value)
+var operator = document.getElementById("operator").value
+
+if(operator === "+"){
+
+document.getElementById('result').value = n1+n2;
+
+}
+if(operator === "-"){
+
+document.getElementById('result').value = n1-n2;
+
+}
+if(operator === "x"){
+
+document.getElementById('result').value = n1*n2;
+
+}
+if(operator === "/"){
+
+document.getElementById('result').value = n1/n2;
+
+}
+if(operator === "%"){
+
+document.getElementById('result').value = n1%n2;
+
+}
+if(operator === "power"){
+
+document.getElementById('result').value = Math.pow(n1, n2);
+}
+
+}
+</script>
+
+</head>
+
+<body>
+<h1> Simple Math Calculator</h1><br><br>
+Enter First Number : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "text" id = "n1" maxlength = "100" value = "0.0">
+<br><br>
+Enter Second Number : &nbsp; <input type = "text" id = "n2" maxlength = "100" value = "0.0"><br><br>
+Select operation : &nbsp; <select id = "operator">
+	<option value = "+">+</option>
+	<option value = "-">-</option>
+	<option value = "x">x</option>
+	<option value = "/">/</option>
+	<option value = "%">%</option>
+	<option value = "power">exponent</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type = "Button" value = "=" onclick="calculator();">
+<br>
+<br>
+Result: <input type = "text" id = "result"><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p><a href="https://github.com/GudiVaraprasad" >@Varaprasad</a>&nbsp;&nbsp;&copy; copyright</p>
+</body>
+</html>
